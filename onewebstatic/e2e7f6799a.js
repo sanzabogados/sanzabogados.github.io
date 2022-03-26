@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     for (i = 0; i < nodes.length; i++) {
         node = nodes[i];
         var classNames = node.getAttribute('class');
-        var href = node.firstChild.getAttribute('href');
+        var href = node.firstChild.getAttribute;
         if (classNames && classNames.indexOf('shinybox') > -1) {
             node.setAttribute('href', href);
             continue;
