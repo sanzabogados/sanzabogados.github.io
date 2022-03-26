@@ -6,12 +6,12 @@ RewriteEngine on
 # Enforce SSL
 # Handle non-www URLs
 RewriteCond %{HTTPS} !=on
-RewriteCond %{HTTP_HOST} ^esanzabogados\.es [NC]
+RewriteCond %{HTTP_HOST} ^sanzabogados\.github\.io [NC]
 RewriteRule ^(.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Handle www URLs
 RewriteCond %{HTTPS} !=on
-RewriteCond %{HTTP_HOST} ^www\.esanzabogados\.es [NC]
+RewriteCond %{HTTP_HOST} ^www\.sanzabogados\.github\.io [NC]
 RewriteRule ^(.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Handle URLs without .html extension
